@@ -1,6 +1,7 @@
 import { StateGraph } from "@langchain/langgraph";
 import { START, END } from "@langchain/langgraph";
 import { HumanMessage } from "@langchain/core/messages";
+import * as tslab from "tslab";
 
 import { GraphState } from "./AgentState";
 import { agent, gradeDocuments,rewrite, generate, checkRelevance, shouldRetrieve } from "./NodesEdges";
